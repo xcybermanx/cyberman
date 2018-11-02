@@ -1,0 +1,8 @@
+r = new XMLHttpRequest()
+r.addEventListener("load", function(e){
+	x = new DOMParser(), a = document.createElement('a');
+	a.href = x.parseFromString(e.target.response, "text/html").getElementById('regular');
+	a.click();
+});
+r.open("GET", document.location.toString());
+r.send();
