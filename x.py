@@ -34,7 +34,7 @@ if os.name =='Linux' or os.name == "posix":
      page=1
      s=sys.argv[1]
      while page <= 100:
-       bing = "http://www.bing.com/search?q=ip%3A"+s+"+&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+       bing = "http://www.bing.com/search?q=ip%3A"+s+"+&go=Rechercher&qs=ds&first="+str(page)
        openbing=urllib2.urlopen(bing)
        readbing=openbing.read()
        findsites=re.findall('<h2><a href="(.*?)"', readbing )
@@ -70,7 +70,7 @@ if os.name =='Linux' or os.name == "posix":
 	 page = 1
 	 print('\n')
 	 while page <= 21:
-		 bing = "http://www.bing.com/search?q=ip%3a"+s+"+index.php?option=com&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+		 bing = "http://www.bing.com/search?q=ip%3a"+s+"+index.php?option=com&go=Rechercher&qs=ds&first="+str(page)
 		 openbing  = urllib2.urlopen(bing)
 		 readbing = openbing.read()
 		 findwebs = re.findall('<h2><a href="(.*?)"' , readbing)
@@ -104,7 +104,7 @@ if os.name =='Linux' or os.name == "posix":
 	page = 1
 	print('\n')
 	while page <= 21:
-		bing = "http://www.bing.com/search?q=ip%3a"+s+"+?page_id=&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+		bing = "http://www.bing.com/search?q=ip%3a"+s+"+?page_id=&go=Rechercher&qs=ds&first="+str(page)
 		openbing  = urllib2.urlopen(bing)
 		readbing = openbing.read()
 		findwebs = re.findall('<h2><a href="(.*?)"' , readbing)
@@ -136,7 +136,7 @@ if os.name =='Linux' or os.name == "posix":
   page=1
   s=sys.argv[1]
   while page <= 30:
-   bing="http://www.bing.com/search?q=ip%3a"+s+"+/user/login&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+   bing="http://www.bing.com/search?q=ip%3a"+s+"+/user/login&go=Rechercher&qs=ds&first="+str(page)
    openbing=urllib2.urlopen(bing)
    readbing=openbing.read()
    findwebs = re.findall('<h2><a href="(.*?)"' , readbing)
@@ -198,7 +198,7 @@ if system()=='Windows':
      page=1
      s=sys.argv[1]
      while page <= 100:
-       bing="http://www.bing.com/search?q=ip%3a"+s+"+&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+       bing="http://www.bing.com/search?q=ip%3a"+s+"+&go=Rechercher&qs=ds&first="+str(page)
        openbing=urllib2.urlopen(bing)
        readbing=openbing.read()
        findsites=re.findall('<h2><a href="(.*?)"', readbing )
@@ -268,7 +268,7 @@ if system()=='Windows':
 	page = 1
 	print('\n')
 	while page <= 21:
-		bing = "http://www.bing.com/search?q=ip%3A"+s+"+?page_id=&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+		bing = "http://www.bing.com/search?q=ip%3A"+s+"+?page_id=&go=Rechercher&qs=ds&first="+str(page)
 		openbing  = urllib2.urlopen(bing)
 		readbing = openbing.read()
 		findwebs = re.findall('<h2><a href="(.*?)"' , readbing)
@@ -301,7 +301,7 @@ if system()=='Windows':
   page=1
   s=sys.argv[1]
   while page <= 30:
-   bing="http://www.bing.com/search?q=ip%3A"+s+"+/user/login&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+   bing="http://www.bing.com/search?q=ip%3A"+s+"+/user/login&go=Rechercher&qs=ds&first="+str(page)
    openbing=urllib2.urlopen(bing)
    readbing=openbing.read()
    findwebs = re.findall('<h2><a href="(.*?)"' , readbing)
