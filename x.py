@@ -19,7 +19,6 @@ if os.name =='Linux' or os.name == "posix":
 |____/|_|\_\_|  |_|_|\_\_|  |_|
                                
 
-https://www.bing.com/search?q=ip%3a96.9.220.135+error&go=Rechercher&qs=ds&first=11&FORM=PERE
 '''
  print (logo)
 
