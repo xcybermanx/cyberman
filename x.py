@@ -34,7 +34,7 @@ if os.name =='Linux' or os.name == "posix":
      page=1
      s=sys.argv[1]
      while page <= 100:
-       bing="http://www.bing.com/search?q=ip%3A"+s+"+&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
+       bing = "http://www.bing.com/search?q=ip%3A"+s+"+&go=Rechercher&qs=ds&first="+str(page)&FORM=PERE
        openbing=urllib2.urlopen(bing)
        readbing=openbing.read()
        findsites=re.findall('<h2><a href="(.*?)"', readbing )
